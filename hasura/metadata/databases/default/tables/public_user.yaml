@@ -1,0 +1,11 @@
+table:
+  name: user
+  schema: public
+array_relationships:
+  - name: device_infos
+    using:
+      foreign_key_constraint_on:
+        column: user_id
+        table:
+          name: device_info
+          schema: user_info

@@ -1,1 +1,4 @@
-[]
+- "!include public_user.yaml"
+- "!include user_info_billing_info.yaml"
+- "!include user_info_device_info.yaml"
+- "!include user_info_user_info.yaml"
