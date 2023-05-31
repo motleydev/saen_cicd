@@ -26,7 +26,7 @@ services:
       PG_DATABASE_URL: postgres://postgres:postgrespassword@postgres-dev-db:5432/postgres
       ## enable the console served by server
       HASURA_GRAPHQL_ENABLE_CONSOLE: "true" # set to "false" to disable console
-      HASURA_GRAPHQL_EE_LICENSE_KEY: "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJIYXN1cmEiLCJzdWIiOiJEZW1vLUFaIiwiZXhwIjoxNjg4MDgzMTAyLCJpYXQiOjE2ODU0OTExMDIsImp0aSI6IjliMGQwYzU1LWYyYWItNGZjZS1hYTllLTY1ZDAwMGEwMTE1MSJ9.VAEH9IMmeLP2DOrelwsO7f8tDcVvMGf6PlzjoOOsz64MINTYaO_gH8ILgjLSoQcloOumGd3ZDOuiphS2Yx8yxUPE_Ay0Tiq3jyG5djYCD2NU3We7gK-8QHmM8myqd2zvq2u1aCq2pJIgy953-g1sBkylg3EGCzDCZw_TD7uQFycRbdY7H9oUnRcpfdw5Y3fVKTQzW_XWKhnj421DiYCXD5f4SgLwFUKXw6r9-NKE4DNHrVck2wSjOl1q9z5j6D2ft5G-kXa8a3SBEF0Dz7PIlV27H7m9ztwfJhSC4ipwn35CUw6_OnYFqT4WZrffY8wbB-GaSN6zMPnTI24u3XzjnXWzcy-5LywDmhTxNEMhiNcwkWuZF7stZBuzwNN6bj9iUUEhvxTg69rsPYZozcZsJv-nuSq9pIWU9UIe6G9OksLZwsbilPhMf1iXsPY3m1rpCZKgyGU7Ebj-MZaEWZEAqLYArBrc_mRd_NDGT2yVAQ7Y1J8qPUGvHvHZ22ylJ9gQ"
+      HASURA_GRAPHQL_EE_LICENSE_KEY: "${EE_KEY}"
       ## enable debugging mode. It is recommended to disable this in production
       HASURA_GRAPHQL_DEV_MODE: "true"
       HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
